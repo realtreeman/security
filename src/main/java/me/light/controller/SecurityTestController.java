@@ -10,8 +10,9 @@ public class SecurityTestController {
 	
 	
 	@GetMapping("/all")
-	public void doAll() {
+	public String doAll() {
 		System.out.println("모든 방문자");
+		return "member/all";
 	}
 	
 	@GetMapping("/member")

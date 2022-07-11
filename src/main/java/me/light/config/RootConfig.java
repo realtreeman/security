@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -26,9 +27,8 @@ import me.light.service.ReplyServiceImpl;
 @EnableAspectJAutoProxy
 @EnableTransactionManagement
 @EnableScheduling
-@ImportResource(value = {
-		"classpath:config/security-context.xml"
-})
+//@ImportResource(value = {"classpath:config/security-context.xml"})
+//@Import(value = {SecurityConfig.class})
 public class RootConfig {
 	
 	@Bean

@@ -8,6 +8,7 @@
 </div>
 
 <form action="register" method="post" id="registerForm">
+	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
 	<div class="form-group">
 		<label for="title">제목 :</label>
 		<input type="text" name="title" id="title" class="form-control">

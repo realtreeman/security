@@ -27,7 +27,7 @@ public class AnnoSecController {
 		MemberVO vo = customUser.getMemberVO();
 		if(!vo.getUserId().equals(userId)) {
 			//예외발생
-			System.out.println("예외발생");
+			//System.out.println("예외발생");
 			throw new NotMathUserIdException();
 		}
 		model.addAttribute("member",vo);

@@ -33,6 +33,7 @@
 <%@ include file="../layout/footer.jspf" %>
 <style>
 	.loginForm {width:400px; margin:auto;}
+	.error_area{color: red; text-align: center;}
 </style>
 
 
